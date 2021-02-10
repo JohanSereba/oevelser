@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="javas.js"></script>
+
+    <title>Title</title>
+</head>
+<body>
+<div id="tabel">
+    <div>
+        <h1>Bestilling av kinobiletter</h1>
+        <table>
+            <tr>
+                <td>Velg film her</td><td>
+                <select id="filmValg">
+                    <option>Titanic</option>
+                    <option>BadBoys2</option>
+                    <option>I am Legend</option>
+                </select></td>
+            </tr>
+            <tr><td><br><br></td></tr>
+            <tr><td>Antall<input id="tall" type="text" size="1"></td><td id="error1" style="color: red"></td></tr>
+
+            <tr></tr>
+            <tr><td>Fornavn</td><td><input type="text" id="navn"></td><td id="error" style="color: red"></td></tr>
+            <tr><td>Etternavn</td><td><input type="text" id="etternavn"></td><td id="error2" style="color: red"></td></tr>
+            <tr><td>Telefonnr</td><td><input type="text" id="telefonnr"></td><td id="error3" style="color: red"></td></tr>
+            <tr><td>Epost</td><td><input type="text" id="epost" ><td id="error4" style="color: red"></td></tr>
+        </table>
+        <button onclick="bestilling()">kjøp billet</button>
+    </div>
+    <div>
+        <h2>Alle Billetter</h2>
+        <div id="container"></div>
+    </div>
+
+
+    <input type="button" onclick="slett()" value="Slett billetter">
+
+
+</div>
+</body>
+</html>
